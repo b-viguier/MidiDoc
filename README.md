@@ -1,0 +1,2 @@
+# MidiDoc
+MIDI protocol documentation
