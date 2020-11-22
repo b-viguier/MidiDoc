@@ -1370,4 +1370,747 @@
 
 
 
+
 	
+
+<h1> MIDI 1.0 Universal System Exclusive Messages </h1>
+
+
+	 <div class="uk-margin"><p style="text-align: left;" align="center">The following table lists all currently defined MIDI 1.0 Universal System Exclusive Messages.&nbsp; Universal System Exclusive Messages are defined as Real Time or&nbsp;Non-Real Time, and are used for extensions to MIDI that are NOT intended&nbsp;to be manufacturer exclusive (despite the name).<br><br>Many of these messages are defined in Specifications and Recommended Practice documentation that is available on this web site.</p>
+<div style="text-align: left;">WARNING! Details about implementing these messages can dramatically impact compatibility with other products. We strongly recommend consulting the appropriate MMA Specification or Recommended Practice for additional information.</div>
+<br><!-- Table 4 -->
+<table class="maintext" style="width: 738px;" cellspacing="0" cellpadding="5" border="1" align="center">
+<tbody>
+<tr>
+<td colspan="4" style="width: 726px;" align="center"><strong>Table 4: Defined Universal System Exclusive Messages</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="width: 226px;" align="center"><strong>Non-Real Time (7EH)</strong></td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center"><strong>SUB-ID #1</strong></td>
+<td style="width: 110px;" align="center"><strong>SUB-ID #2</strong></td>
+<td colspan="2" style="width: 506px;">
+<p align="center"><strong>DESCRIPTION</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">00</td>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td colspan="2" style="width: 506px;">Unused</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td colspan="2" style="width: 506px;">
+<p>Sample Dump Header</p>
+</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td colspan="2" style="width: 506px;">
+<p>Sample Data Packet</p>
+</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td colspan="2" style="width: 506px;">
+<p>Sample Dump Request</p>
+</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Time Code</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Special</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Punch In Points</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Punch Out Points</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Delete Punch In Point</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Delete Punch Out Point</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">05</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Start Point</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">06</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Stop Point</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">07</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Start Points with additional info.</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">08</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Stop Points with additional info.</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">09</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Delete Event Start Point</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0A</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Delete Event Stop Point</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0B</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Cue Points</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0C</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Cue Points with additional info.</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0D</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Delete Cue Point</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0E</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Name in additional info.</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">05</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">Sample Dump Extensions</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Loop Points Transmission</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Loop Points Request</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Sample Name Transmission</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Sample Name Request</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">05</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Extended Dump Header</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">06</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Extended Loop Points Transmission</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">07</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Extended Loop Points Request</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">06</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">General Information</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Identity Request</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Identity Reply</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">07</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">File Dump</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Header</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Data Packet</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Request</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">08</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Tuning Standard (Non-Real Time)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Bulk Dump Request</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Bulk Dump Reply</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Tuning Dump Request</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Key-Based Tuning Dump</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">05</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Scale/Octave Tuning Dump, 1 byte format</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">06</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Scale/Octave Tuning Dump, 2 byte format</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">07</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Single Note Tuning Change with Bank Select</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">08</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Scale/Octave Tuning, 1 byte format</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">09</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Scale/Octave Tuning, 2 byte format</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">09</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">General MIDI</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">General MIDI 1 System On</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">General MIDI System Off</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">General MIDI 2 System On</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">0A</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">Downloadable Sounds</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Turn DLS On</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Turn DLS Off</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Turn DLS Voice Allocation Off</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Turn DLS Voice Allocation On</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">0B</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">File Reference Message</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">reserved (do not use)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Open File</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Select or Reselect Contents</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Open File and Select Contents</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Close File</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">05-7F</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">reserved (do not use)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">0C</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Visual Control</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00-7F</td>
+<td style="width: 30px;">&nbsp;</td>
+<td style="width: 476px;">MVC Commands <em>(See MVC Documentation)</em></td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">0D</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Capability Inquiry</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00-7F</td>
+<td style="width: 30px;">&nbsp;</td>
+<td style="width: 506px;">&nbsp;Inquiry/Response Messages (See Documentation)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">7B</td>
+<td style="width: 110px;" align="center">--</td>
+<td colspan="2" style="width: 506px;">End of File</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">7C</td>
+<td style="width: 110px;" align="center">--</td>
+<td colspan="2" style="width: 506px;">Wait</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">7D</td>
+<td style="width: 110px;" align="center">--</td>
+<td colspan="2" style="width: 506px;">Cancel</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">7E</td>
+<td style="width: 110px;" align="center">--</td>
+<td colspan="2" style="width: 506px;">NAK</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">7F</td>
+<td style="width: 110px;" align="center">--</td>
+<td colspan="2" style="width: 506px;">ACK</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="4" style="width: 738px;" align="center"><hr></td>
+</tr>
+<tr>
+<td colspan="2" style="width: 226px;" align="center"><strong>Real Time (7FH)</strong></td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center"><strong>SUB-ID #1</strong></td>
+<td style="width: 110px;" align="center"><strong>SUB-ID #2</strong></td>
+<td colspan="2" style="width: 506px;">
+<p align="center"><strong>DESCRIPTION</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">00</td>
+<td style="width: 110px;" align="center">--</td>
+<td colspan="2" style="width: 506px;">Unused</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Time Code</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Full Message</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">User Bits</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Show Control</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">MSC Extensions</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01-7F</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">MSC Commands <em>(see MSC Documentation)</em></td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">Notation Information</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Bar Number</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Time Signature (Immediate)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">42</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Time Signature (Delayed)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">Device Control</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Master Volume</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Master Balance</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Master Fine Tuning</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Master Coarse Tuning</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">05</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Global Parameter Control</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">05</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">Real Time MTC Cueing</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Special</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Punch In Points</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Punch Out Points</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">(Reserved)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">04</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">(Reserved)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">05</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Start points</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">06</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Stop points</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">07</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Start points with additional info.</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">08</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Stop points with additional info.</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">09</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">(Reserved)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0A</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">(Reserved)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0B</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Cue points</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0C</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Cue points with additional info.</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0D</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">(Reserved)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">0E</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Event Name in additional info.</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">06</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Machine Control Commands</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00-7F</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">MMC Commands <em>(See MMC Documentation)</em></td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">07</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Machine Control Responses</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">00-7F</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">MMC Responses <em>(See MMC Documentation)</em></td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">08</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">MIDI Tuning Standard (Real Time)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Single Note Tuning Change</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">07</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Single Note Tuning Change with Bank Select</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">08</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Scale/Octave Tuning, 1 byte format</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">09</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Scale/Octave Tuning, 2 byte format</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">09</td>
+<td style="width: 110px;" align="center">nn</td>
+<td colspan="2" style="width: 506px;">Controller Destination Setting<em> (See GM2 Documentation)</em></td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">01</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Channel Pressure (Aftertouch)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">02</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Polyphonic Key Pressure (Aftertouch)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">03</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">Controller (Control Change)</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">0A</td>
+<td style="width: 110px;" align="center">01</td>
+<td colspan="2" style="width: 506px;">Key-based Instrument Control</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">0B</td>
+<td style="width: 110px;" align="center">01</td>
+<td colspan="2" style="width: 506px;">Scalable Polyphony MIDI MIP Message</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">0C</td>
+<td style="width: 110px;" align="center">00</td>
+<td colspan="2" style="width: 506px;">Mobile Phone Control Message</td>
+</tr>
+<tr>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 110px;" align="center">&nbsp;</td>
+<td style="width: 1px;">&nbsp;</td>
+<td style="width: 706px;">&nbsp;</td>
+</tr>
+</tbody>
+</table></div> 
+
